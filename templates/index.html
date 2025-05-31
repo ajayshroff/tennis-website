@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h2>Shroff Coaching & Stringing</h2>
+        <p>Family-run business providing quick and reliable stringing services and expert tennis coaching</p>
+    </div>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <div class="service-card">
+            <div class="image-placeholder">
+                <img src="{{ url_for('static', filename='strings provided.png') }}" alt="Strings Provided Service" class="service-image">
+            </div>
+            <h3>Strings Provided</h3>
+            <p>Expert stringing service when you provide your own strings</p>
+            <div class="price">$30</div>
+        </div>
+        
+        <div class="service-card">
+            <div class="image-placeholder">
+                <img src="{{ url_for('static', filename='no strings provided.png') }}" alt="No Strings Provided Service" class="service-image">
+            </div>
+            <h3>No Strings Provided</h3>
+            <p>Professional stringing service including high-quality strings of your choice from our premium selection</p>
+            <div class="price">$40</div>
+        </div>
+    </div>
+</section>
+
+<section class="coaching">
+    <h2>Tennis Coaching</h2>
+    <div class="coaching-content">
+        <div class="coaching-text">
+            <h3>Learn from Experienced Coaches</h3>
+            <p>Whether you're a beginner looking to learn the basics or an advanced player aiming to refine your technique, our experienced coaches are here to help you improve your game.</p>
+            <ul class="coaching-features">
+                <li>Private Individual Lessons</li>
+                <li>Private Group Sessions</li>
+            </ul>
+        </div>
+        <div class="coaching-image">
+            <!-- Add your coaching image here -->
+            <div class="placeholder-text">Tennis Coaching Image</div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-list">
+        <div class="feature">
+            <h3>Quick Turnaround</h3>
+            <p>Fast and efficient service to get you back on the court</p>
+        </div>
+        <div class="feature">
+            <h3>Family Business</h3>
+            <p>Personal attention and care for every racket</p>
+        </div>
+        <div class="feature">
+            <h3>Local Service</h3>
+            <p>Conveniently located in Brookline, MA</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-content">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <div class="contact-details">
+                <div class="contact-person">
+                    <div class="contact-role">
+                        <h4>Tennis Coach</h4>
+                        <p>Arjun Shroff</p>
+                    </div>
+                    <div class="contact-role">
+                        <h4>Stringing Services</h4>
+                        <p>Arjun Shroff</p>
+                        <p>Ajay Shroff</p>
+                    </div>
+                </div>
+                <div class="contact-email">
+                    <h4>Email</h4>
+                    <a href="mailto:shrofftennisandstringing@gmail.com">shrofftennisandstringing@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
